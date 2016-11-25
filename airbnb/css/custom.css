@@ -17,15 +17,15 @@ body {
 }*/
 
 .navbar {
-    background-color: #ffefed;
-    height: 55px;
-    border-width: 0px;
+    background-color: white;
+    height: 65px;
+    border-bottom: 1px ridge; 
 }
 
-.navbar-height
+/*.navbar-height
 {
     height: 61px;
-}
+}*/
 
  .carousel img {
     width:100% !important;
