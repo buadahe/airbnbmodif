@@ -608,6 +608,11 @@ input{
     margin: 0 auto;
 }
 
+.guest{
+    padding: 6px 25px;
+    height:40px
+}
+
 .text-lima, .icon-lima {
     color: #3fb34f;
 }
