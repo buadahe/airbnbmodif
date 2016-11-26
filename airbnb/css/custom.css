@@ -8,39 +8,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*.navbar-default {
-    height: 61px;
-    background-color:transparent !important;
-    border-color:transparent;
-    background-image:none;
-    box-shadow:none;  
-}*/
-
 .navbar {
-    background: white;
+    background-color: white;
     height: 65px;
-    border-bottom: 1px ridge;
-    position: absolute;
-    width: 100%;
-    top:0;
-    z-index: 5;
+    border-bottom: 1px ridge; 
+    margin-bottom: 0px;
 }
-
-.navbar-scrolled-down{
-    animation: fadeInDown 0.5s;
-    position:fixed;
-    top:0;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    z-index: 10;
-    width: 100%;
-    margin-top: 0;
-}
-
-
-/*.navbar-height
-{
-    height: 61px;
-}*/
 
  .carousel img {
     width:100% !important;
@@ -50,6 +23,42 @@ body {
 
 .carousel{
     margin-top: -20px;
+}
+
+.input-box{
+    margin-top: 4px;
+    height: 43px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.input-without-border{
+    margin-top: 4px;
+    height: 43px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.checkbox{
+    height: 18px;
+    width: 18px;
+}
+
+.input-div-gray{
+    background-color: #dddddd;
+}
+
+.container-search{
+    margin-top: 14px;
+}
+
+.search-label{
+    margin-top: 17px;
+}
+
+.small-padding{
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 .slider-container{
