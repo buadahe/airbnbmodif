@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Circular;
+    src: url('../fonts/circular/CircularStd-Book.otf');
+}
+
 body {
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -67,6 +72,19 @@ body {
     background-image: url('../img/room.jpg');
     background-size: cover;
     background-position: 0px;
+}
+
+.room-header-title {
+    font-weight: 700 !important;
+    color: #484848 !important;
+    font-family: Circular !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 36px !important;
+    line-height: 44px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
 }
 
 .slider-container{
