@@ -61,3 +61,121 @@
     -moz-transition: height .2s;
     transition: height .2s;
 }
+
+.book-it__container {
+    position: absolute;
+    width: 315px;
+    z-index: 1001;
+    border-top: 0;
+}
+
+div {
+    display: block;
+}
+
+.book-it__price {
+    background-color: #3c3f40;
+    background-color: rgba(60,63,64,0.9);
+    border: 0;
+    color: #fff;
+    height: 40px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    width: 315px;
+    z-index: 1001;
+    overflow-y: hidden;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.panel {
+    border: 1px solid black;
+    background-color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+@media (min-width: 1128px) {
+    .book-it__container .book-it-panel {
+        min-height: 175px;
+    }
+}
+
+.panel-header:first-child, .panel-body:first-child, ul.panel-body>li:first-child, ol.panel-body>li:first-child, .panel-footer:first-child {
+    border-top: 0;
+}
+.panel-light {
+    background-color: #fff;
+}
+.panel-body {
+    position: relative;
+}
+.panel-header, .panel-body, ul.panel-body>li, ol.panel-body>li, .panel-footer {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #dce0e0;
+}
+
+.panel-body>*:first-child {
+    margin-top: 0;
+}
+.space-3 {
+    margin-bottom: 18px;
+}
+.row-condensed {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+.book-it__label {
+    padding-top: 0;
+}
+.ui-datepicker-target {
+    font-size: 13px;
+    padding: 9px 6px;
+}
+.space-top-3 {
+    margin-top: 18px;
+}
+@media (min-width: 744px){
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+}
+@media (min-width: 1128px){
+    .book-it__container .book-it-panel .GuestPickerContainer {
+        position: relative;
+    }
+}
+.GuestPickerTrigger {
+    position: relative;
+}
+
+.GuestPickerTrigger .GuestPickerTrigger__button {
+    background: #fff;
+    text-align: left;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 6px 8px;
+    font-size: 1em;
+    line-height: normal;
+    display: block;
+    width: 100%;
+    border: 1px solid #aaa;
+    color: #484848;
+}
+input {
+    width: 100%;
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
