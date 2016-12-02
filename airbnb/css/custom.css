@@ -4,7 +4,6 @@
 }
 
 body {
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.43;
     color: #484848;
@@ -74,6 +73,13 @@ body {
     background-position: 0px;
 }
 
+.host-header-image{
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/host.png');
+    background-size: cover;
+}
+
 .room-header-title {
     font-weight: 700 !important;
     color: #484848 !important;
@@ -87,6 +93,13 @@ body {
     padding-bottom: 6px !important;
 }
 
+.carousel-content {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 20;
+  text-shadow: 0 1px 1px rgba(0,0,0,.6);
+}
 
 
 
