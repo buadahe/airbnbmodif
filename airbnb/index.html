@@ -19,8 +19,14 @@
 		<link rel="stylesheet" type="text/css" href="css/fxfullwidth.css" />
 		<link rel="stylesheet" type="text/css" href="css/slicknav.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 	</head>
 
 	<body>
@@ -50,15 +56,15 @@
 		  <!-- Wrapper for slides -->
 		  	<div class="carousel-inner" role="listbox">
 		    	<div class="item active">
-		      		<img src="img/6.jpg" alt="Chania" style="max-width: 100%">	
+		      		<img src="img/6.jpg" alt="Chania" style="max-width: 100%" class="text-color-white">
 		    	</div>
 
 			    <div class="item">
-			      <img src="img/7.jpg" alt="Chania">
+			      <img src="img/7.jpg" alt="Chania" class="text-color-white">
 			    </div>
 
 			    <div class="item">
-			      <img src="img/8.jpg" alt="Flower">
+			      <img src="img/8.jpg" alt="Flower" class="text-color-white">
 			    </div>
             </div>
 
@@ -104,17 +110,31 @@
 						<div class="SearchForm__location col-lg-4 col-md-4" >
 							<label for="checkin" class="SearchForm__label" style="display: block;"><span>When</span></label>
 							<div style="width:40%; display: inline-block;">
-								<input class="LocationInput input-large" name="location" type="text" placeholder="Check In" autocomplete="off" id="checkin" value="">
+								<input id="datetimepicker6" class="LocationInput input-large" name="from" type="text" placeholder="Check In" autocomplete="off" id="checkin" value="">
 							</div>
 							<div class="DropDownWrapper col-md-12"></div>
 							<span style="margin:0 10px;font-size: 20px;display: inline-block;">
 								<i class="fa fa-arrow-right"></i>
 							</span>
 							<div style="width:40%; display: inline-block;">
-								<input  class="LocationInput input-large" name="location" type="text" placeholder="Check Out" autocomplete="off" id="checkout" value="">
+								<input id="datetimepicker7" class="LocationInput input-large" name="to" type="text" placeholder="Check Out" autocomplete="off" id="checkout" value="">
 							</div>
 							<div class="DropDownWrapper col-md-12"></div>
 						</div>
+							<script type="text/javascript">
+								$(function () {
+									$('#datetimepicker6').datetimepicker();
+									$('#datetimepicker7').datetimepicker({
+										useCurrent: false //Important! See issue #1075
+									});
+									$("#datetimepicker6").on("dp.change", function (e) {
+										$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+									});
+									$("#datetimepicker7").on("dp.change", function (e) {
+										$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+									});
+								});
+							</script>
 						<div class="SearchForm__location col-lg-2 col-md-2" >
 							<label style="display: block;" for="search-location" class="SearchForm__label"><span>Guest</span></label>
 							<div style="display: inline-block;">
@@ -461,10 +481,76 @@
 
 
 		<script src="js/classie.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/jquery.slicknav.min.js"></script>
 		<!--<script src="js/common.js"></script>-->
+		<script>
+			//------ main nav menu ----- //
+			$(document).ready(function() {
+				$(window).scroll(function () {
+
+					function checkWidth() {
+						var windowSize = $(window).width();
+
+						if (windowSize > 768) {
+							if (jQuery(this).scrollTop() > 400) {
+
+								$('.navbar').addClass('navbar-scrolled-down');
+								//  $('.logo').css({'z-index':'99', 'position':'fixed', 'top':'11px'});
+							} else {
+								$('.navbar').removeClass('navbar-scrolled-down');
+								//  $('.logo').css({'z-index':'99', 'position':'absolute', 'top':'-45px'});
+							}
+						}
+
+					}
+
+					// Execute on load
+					checkWidth();
+					// Bind event listener
+					$(window).resize(checkWidth);
+
+				});
+				var countslider = 0;
+
+				$(".next-slider").click(function(){
+					var val = $(this).attr('value');
+					var countslider = $('#slider'+val).attr('value');
+					countslider = parseFloat(countslider)+ parseFloat(-25);
+					$("#slider"+val).css({'transform': 'translateX('+countslider+'%)'});
+					$("#prev-slider"+val).show();
+					$('#slider'+val).attr('value',countslider);
+					if(countslider == -50){
+						$("#next-slider"+val).hide();
+					}else{
+						$("#next-slider"+val).show();
+					}
+				});
+
+				$(".prev-slider").click(function(){
+					var val = $(this).attr('value');
+					var countslider = $('#slider'+val).attr('value');
+					countslider = parseFloat(countslider)+ parseFloat(25);
+					$("#slider"+val).css({'transform': 'translateX('+countslider+'%)'});
+					$("#prev-slider"+val).show();
+					$('#slider'+val).attr('value',countslider);
+					if(countslider == 0){
+						$("#prev-slider"+val).hide();
+						$("#next-slider"+val).show();
+					}else{
+						$("#prev-slider"+val).show();
+						$("#next-slider"+val).show();
+					}
+				});
+				if(countslider == 0){
+					$(".prev-slider").hide();
+				}
+
+
+
+			});
+		</script>
+
 	</body>
 </html>
 
