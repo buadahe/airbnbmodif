@@ -179,3 +179,42 @@ input {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
+
+.with-new-header .airbnb-header .regular-header {
+    display: block;
+}
+
+.airbnb-header .regular-header {
+    display: none;
+    height: 61px;
+}
+
+.image_1kryhnd {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.children_dsybz9 {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.container_v5f37j {
+    position: relative !important;
+    width: 100% !important;
+    z-index: 0 !important;
+}
+.cardContainer_1c0ykgj {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #DBDBDB !important;
+}
+.container_ro0g1e {
+    cursor: pointer !important;
+}
