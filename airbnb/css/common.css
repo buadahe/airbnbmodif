@@ -226,4 +226,98 @@ input {
     display: inline-block !important;
     margin-bottom: 5px;
 }
+
+.panel {
+    background: #e5faf9 !important;
+    border: 1px solid #b2f1ec;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.help-panel__bulb-img {
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(https://a0.muscache.com/airbnb/static/list_your_space/tip-icon-73f3ef1d10a9545bfd15fd266803da48.png);
+    width: 22px;
+    height: 31px;
+}
+
+.price {
+    color: #484848;
+    font-size: 28px;
+}
+
+.block-radio-button {
+    margin-top: 0;
+    max-width: 320px;
+}
+
+.block-radio-button:first-of-type .block-radio-button__panel {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.block-radio-button:not(:last-of-type) .block-radio-button__panel {
+    border-bottom: 0;
+}
+.block-radio-button__panel {
+    padding: 20px;
+    padding-right: 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-color: #c4c4c4;
+}
+
+.btn-block {
+    display: block;
+    white-space: normal;
+    width: 100%;
+}
+
+.no-margin-h {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+input[type="radio"] {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+input[type="radio"] {
+    -webkit-border-radius: 1.25em;
+    -moz-border-radius: 1.25em;
+    border-radius: 1.25em;
+}
+input[type="radio"], input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    height: 1.25em;
+    width: 1.25em;
+    margin-bottom: -0.25em;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.help-panel__title {
+    color: #2d2d2d !important;
+}
+
+.help-panel__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #767676;
+}
+
+.pointer-input {
+    cursor: pointer;
+}
+
+
+strong {
+    font-weight: 700;
+}
 >>>>>>> origin/master
