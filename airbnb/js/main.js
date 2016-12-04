@@ -210,5 +210,30 @@ $( document ).ready(function() {
 	$('#hearts-existing').on('starrr:change', function(e, value){
 		$('#count-existing').html(value);
 	});
+
+	$(window).scroll(function () {
+
+					function checkWidth() {
+						var windowSize = $(window).width();
+
+						if (windowSize > 768) {
+							if (jQuery(this).scrollTop() > 400) {
+
+								$('.navbar').addClass('navbar-scrolled-down');
+								//  $('.logo').css({'z-index':'99', 'position':'fixed', 'top':'11px'});
+							} else {
+								$('.navbar').removeClass('navbar-scrolled-down');
+								//  $('.logo').css({'z-index':'99', 'position':'absolute', 'top':'-45px'});
+							}
+						}
+
+					}
+
+					// Execute on load
+					checkWidth();
+					// Bind event listener
+					$(window).resize(checkWidth);
+
+				});
 });
 
