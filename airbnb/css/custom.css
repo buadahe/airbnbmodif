@@ -705,8 +705,22 @@ a {
     width: 100%;
 }
 
-.pull-left{
-    margin-left:20px
+.space-8 {
+    margin-bottom: 48px;
+}
+
+.media>.pull-left {
+    margin-right: 15px;
+}
+.pull-left {
+    float: left;
+}
+.media-left, .media>.pull-left {
+    padding-right: 0px;
+}
+
+.media-link:hover, .media-link:focus {
+    text-decoration: none;
 }
 
 input{
@@ -793,7 +807,7 @@ input{
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
-    display: block;
+    display: inline-block;
     vertical-align: bottom;
     overflow: hidden;
     background-color: #bbb;
@@ -992,19 +1006,7 @@ li>.navtree-list {
 .slideshow-images li.media-photo {
     display: none;
 }
-.media-photo-block {
-    display: block;
-}
-.media-photo {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: relative;
-    display: block;
-    vertical-align: bottom;
-    overflow: hidden;
-    background-color: #bbb;
-}
+
 
 .img-responsive {
     width: 100%;
@@ -1013,7 +1015,7 @@ li>.navtree-list {
 
 .panel {
     border: 1px solid #dce0e0;
-    background-color: #fff;
+    background-color: #fff !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -1116,3 +1118,216 @@ input#remember_me2 {
     color:inherit !important;
 }
 
+.badge-container {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
+.badge-pill-label {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.show-inline-block {
+    display: inline-block !important;
+}
+.va-middle {
+    vertical-align: middle;
+}
+
+.badge-pill {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    padding: 6px 9px;
+    min-width: 28px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    background: #ffb400;
+    background: -webkit-linear-gradient(310deg, #ffc333 55%, #ffb400 55%, #ffb400 100%);
+    background: -moz-linear-gradient(310deg, #ffc333 55%, #ffb400 55%, #ffb400 100%);
+    background: -o-linear-gradient(310deg, #ffc333 55%, #ffb400 55%, #ffb400 100%);
+    background: linear-gradient(140deg, #ffc333 55%, #ffb400 55%, #ffb400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffc333', endColorstr='#ffffb400', GradientType=0);
+}
+.badge-pill-count {
+    position: relative;
+}
+
+.badge-pill.h3 {
+    margin: 0px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.1;
+    text-rendering: optimizelegibility;
+
+}
+
+.h3{
+    margin:0px;
+}
+
+a.panel-image {
+    display: block;
+}
+.wishlist-unit {
+    height: 234px;
+}
+
+.wishlist-bg-img {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.media-cover-dark:after {
+    background: #000;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    content: " ";
+}
+.media-cover, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+:root .row.row-table {
+    width: 100% \9;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+    position:relative;
+}
+
+.row.row-table {
+    width: 100%;
+    width: -webkit-calc(100% + 24px);
+    width: -moz-calc(100% + 24px);
+    width: calc(100% + 24px);
+}
+.row-full-height {
+    height: 100%;
+}
+.row-table {
+    display: table;
+    table-layout: fixed;
+}
+
+.col-top, .col-middle, .col-bottom {
+    float: none;
+    display: table-cell;
+}
+.col-middle {
+    vertical-align: middle;
+}
+.panel-body {
+    position: relative;
+}
+.panel-header, .panel-body, ul.panel-body>li, ol.panel-body>li, .panel-footer {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #dce0e0;
+}
+.btn {
+    border-color: #c4c4c4;
+    background: white;
+    color: #484848;
+}
+.btn {
+    padding: 7px 21px;
+    font-size: 14px;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 1.43;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn-guest {
+    border-color: #b4a76c;
+    background-color: #b4a76c;
+    color: #fff;
+}
+.avatar-wrapper {
+    float: left;
+}
+
+.profile-name {
+    max-width: 68px;
+}
+.comment-container {
+    position: relative;
+}
+.expandable.expanded .expandable-content, .expandable.expanded .expandable-content-long, .react-expandable.expanded .expandable-content, .react-expandable.expanded .expandable-content-long {
+    height: auto;
+}
+.expandable .expandable-content, .react-expandable .expandable-content {
+    position: relative;
+    height: 7em;
+    overflow: hidden;
+    -webkit-transition: height .2s;
+    -o-transition: height .2s;
+    -moz-transition: height .2s;
+    transition: height .2s;
+}
+
+.hostings-list-item-image {
+    height: 169px;
+}
+
+.media-caption {
+    padding: 25px 15px 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0,0,0,0.8)));
+    background-image: -moz-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.8));
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#CC000000', GradientType=0);";
+    color: #fff;
+    text-align: center;
+}
+
+.img-responsive-height {
+    width: auto;
+    height: 100%;
+}
+
+a:hover{
+    text-decoration: none;
+}
