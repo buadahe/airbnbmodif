@@ -12,6 +12,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.container{
+	overflow: visible;
+}
+
+.search-input-inner-container {
+	color:black;
+}
+
 .navbar {
     background-color: white;
     height: 65px;
@@ -785,7 +793,7 @@ input{
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
-    display: inline-block;
+    display: block;
     vertical-align: bottom;
     overflow: hidden;
     background-color: #bbb;
@@ -992,7 +1000,7 @@ li>.navtree-list {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
-    display: inline-block;
+    display: block;
     vertical-align: bottom;
     overflow: hidden;
     background-color: #bbb;
@@ -1093,6 +1101,7 @@ input#remember_me2 {
     margin-top: 0;
 }
 
+
 #navbar:not(.navbar-scrolled-down){
     background: transparent;
     position: absolute;
@@ -1103,8 +1112,7 @@ input#remember_me2 {
     color:white !important;
 }
 
-
-
 .navbar-brand, .navbar-nav>li>a{
     color:inherit !important;
 }
+
