@@ -294,7 +294,7 @@ input[type="radio"] {
 }
 input[type="radio"], input[type="checkbox"] {
     position: relative;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
     height: 1.25em;
     width: 1.25em;
     margin-bottom: -0.25em;
@@ -320,4 +320,122 @@ input[type="radio"], input[type="checkbox"] {
 strong {
     font-weight: 700;
 }
+
+.progress-bar__container {
+    height: 10px;
+    line-height: .8px;
+    background-color: #edefed;
+    -webkit-box-shadow: 0 1px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px rgba(0,0,0,0.05);
+}
+
+.progress__bar-section {
+    height: 10px;
+    position: absolute;
+}
+
+.progress-section {
+    display: inline-block;
+    background-color: #edefed;
+    border-right: 1px solid #dce0e0;
+}
+
+.progress-bar__placeholder {
+    z-index: 1;
+    width: 3%;
+    height: 10px;
+    background-color: #00a699;
+    -webkit-border-top-right-radius: 100px;
+    -moz-border-radius-topright: 100px;
+    border-top-right-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-radius-bottomright: 100px;
+    border-bottom-right-radius: 100px;
+    border: 0;
+    position: absolute;
+}
+
+.progress-section--completed {
+    background-color: #00a699;
+    border-right-color: #00a699;
+}
+
+.progress-section--last-completed {
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.main-panel__actions-wrapper {
+    position: fixed;
+    z-index: 111;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.centered-content {
+    max-width: 912px;
+    margin: 0 0 0 10%;
+}
+
+.centered-content-2 {
+    max-width: 912px;
+    margin: 0 0 0 25%;
+}
+
+@media (min-width: 744px){
+	.main-panel-outer-half {
+	    width: 77%
+	    float: left;
+	}
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+@media (min-width: 744px){
+	.main-panel__actions-wrapper {
+		padding-top: 0;
+	}
+
+	.main-panel-padding {
+	    padding-top: 0;
+	}
+}
+@media (min-width: 744px){
+	.main-panel-inner-half {
+	    max-width: 544px;
+	}
+	.main-panel-inner-half-2 {
+	    max-width: 655px;
+	}
+}
+
+.main-panel-inner-half {
+    width: 100%;
+}
+.main-panel-padding {
+    padding: 30px;
+}
+
+@media (min-width: 744px){
+	.divider {
+	    padding-bottom: 30px;
+	}
+}
+
+.main-panel__actions-wrapper .divider {
+    height: 1px;
+    -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
+    position: relative;
+}
 >>>>>>> origin/master
+
