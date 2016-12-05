@@ -44,6 +44,14 @@ body {
     border: 1px solid #ccc;
 }
 
+.input-box-wizard{
+    margin-top: 4px;
+    height: 60px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
 .input-without-border{
     margin-top: 4px;
     height: 43px;
