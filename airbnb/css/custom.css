@@ -191,6 +191,11 @@ body {
     right: 16px !important;
 }
 
+.text-muted
+{
+    color: #767676;
+}
+
 /*Adi Umbas Start*/
 .slider-container{
     overflow: hidden !important;

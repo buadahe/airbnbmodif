@@ -370,6 +370,14 @@ strong {
     border-bottom-right-radius: 15px;
 }
 
+.progress-section--skipped {
+    border-right-color: #4ddfd4;
+    background: -webkit-repeating-linear-gradient(315deg, #4ddfd4, #4ddfd4 2px, #99ede6 2px, #99ede6 4px);
+    background: -moz-repeating-linear-gradient(315deg, #4ddfd4, #4ddfd4 2px, #99ede6 2px, #99ede6 4px);
+    background: -o-repeating-linear-gradient(315deg, #4ddfd4, #4ddfd4 2px, #99ede6 2px, #99ede6 4px);
+    background: repeating-linear-gradient(135deg, #4ddfd4, #4ddfd4 2px, #99ede6 2px, #99ede6 4px);
+}
+
 .main-panel__actions-wrapper {
     position: fixed;
     z-index: 111;
@@ -436,6 +444,33 @@ strong {
     -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
     box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
     position: relative;
+}
+
+.space-1 {
+    margin-bottom: 6px;
+}
+.va-container-v {
+    height: 100%;
+}
+
+.va-container {
+    display: table;
+    position: relative;
+}
+
+.lys-similar-listing__cover-img {
+    margin-right: 20px;
+}
+
+.preview-card__img-container {
+    background-repeat: no-repeat;
+    background-image: url(https://a1.muscache.com/airbnb/static/list_your_space/preview-no-photo-small-c11979e18abe606c4f748c2fe22350ca.png);
+    width: 0;
+    height: 0;
+}
+
+.va-middle {
+    vertical-align: middle;
 }
 >>>>>>> origin/master
 
