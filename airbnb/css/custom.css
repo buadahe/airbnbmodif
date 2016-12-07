@@ -196,6 +196,11 @@ body {
     color: #767676;
 }
 
+.text-shadow
+{
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
 /*Adi Umbas Start*/
 .slider-container{
     overflow: hidden !important;
@@ -1123,7 +1128,7 @@ input#remember_me2 {
     width: 100%;
     z-index: 5;
     border-bottom: 0;
-    padding-top: 18px;
+    padding-top: 0px;
     color:white !important;
 }
 
