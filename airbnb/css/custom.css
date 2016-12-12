@@ -16,6 +16,10 @@ body {
 	overflow: visible;
 }
 
+.h2{
+    margin:0px
+}
+
 .search-input-inner-container {
 	color:black;
 }
@@ -1368,3 +1372,93 @@ label{
 .float-right{
     float:right;
 }
+
+.subnav {
+    position: relative;
+    background-color: #484848;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.subnav[data-sticky="true"].pinned, .subnav[data-transition-at] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.subnav-item[aria-selected="true"]:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 14px;
+    right: 14px;
+    height: 4px;
+    background: #bbb;
+}
+
+.subnav-item:hover, .subnav-item:focus, .subnav-item[aria-selected="true"] {
+    text-decoration: none;
+    color: #fff;
+}
+
+.subnav-text, .subnav-item {
+    position: relative;
+    float: left;
+    padding: 10px 14px;
+    color: #fff;
+}
+
+.sidenav-item[aria-selected="true"] {
+    text-decoration: none;
+    color: #484848;
+    font-weight: bold;
+}
+
+.subnav-item {
+    color: #bbb;
+}
+
+h2, .h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h1, .h1 {
+    font-size: 44px;
+    font-weight: normal;
+}
+
+h6, .h6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #767676;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.text-copy {
+    font-size: 16px;
+}
+
+
+.text-rausch, .icon-rausch {
+    color: #d43242;
+}
+
+.about-us-map {
+    height: 481px;
+    background: transparent;
+}
+
+.row-condensed .col-1, .row-condensed .col-sm-1, .row-condensed .col-md-1, .row-condensed .col-lg-1, .row-condensed .col-2, .row-condensed .col-sm-2, .row-condensed .col-md-2, .row-condensed .col-lg-2, .row-condensed .col-3, .row-condensed .col-sm-3, .row-condensed .col-md-3, .row-condensed .col-lg-3, .row-condensed .col-4, .row-condensed .col-sm-4, .row-condensed .col-md-4, .row-condensed .col-lg-4, .row-condensed .col-5, .row-condensed .col-sm-5, .row-condensed .col-md-5, .row-condensed .col-lg-5, .row-condensed .col-6, .row-condensed .col-sm-6, .row-condensed .col-md-6, .row-condensed .col-lg-6, .row-condensed .col-7, .row-condensed .col-sm-7, .row-condensed .col-md-7, .row-condensed .col-lg-7, .row-condensed .col-8, .row-condensed .col-sm-8, .row-condensed .col-md-8, .row-condensed .col-lg-8, .row-condensed .col-9, .row-condensed .col-sm-9, .row-condensed .col-md-9, .row-condensed .col-lg-9, .row-condensed .col-10, .row-condensed .col-sm-10, .row-condensed .col-md-10, .row-condensed .col-lg-10, .row-condensed .col-11, .row-condensed .col-sm-11, .row-condensed .col-md-11, .row-condensed .col-lg-11, .row-condensed .col-12, .row-condensed .col-sm-12, .row-condensed .col-md-12, .row-condensed .col-lg-12 {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
