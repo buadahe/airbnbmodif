@@ -513,5 +513,60 @@ strong {
     height: 500px;
 }
 
+.text-lead {
+    font-size: 16px;
+}
+
+.background-beach {
+    background-color: #ffb400;
+}
+.page-container-full {
+    width: auto;
+}
+.text-contrast {
+    color: #fff;
+}
+
+.story.departments {
+    background: url(https://a0.muscache.com/airbnb/static/jobs/new/hero/hero-departments-747b03d73409d17628eaef89c82285d2.jpg) 50% 0 no-repeat;
+}
+
+.icon-size-4 {
+    font-size: 4.8em;
+}
+
+.story.locations {
+    background: url(https://a0.muscache.com/airbnb/static/jobs/new/hero/hero-locations-f5c9f7b35bb03f092aa3e2cd521de583.jpg) 50% 0 no-repeat;
+}
+
+.locations-list .locationIcon {
+    display: block;
+    height: 180px;
+}
+
+.icon-transparent {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+#home-slides .story.engineering, #content-slides .story.engineering {
+    background: url(https://a1.muscache.com/airbnb/static/jobs/new/hero/hero-engineers-187f1794f73bfdc1e2a5b7b60fcb572d.jpg) 50% 0 no-repeat;
+}
+
+#home-slides .story.university, #content-slides .story.university {
+    background: url(https://a0.muscache.com/airbnb/static/jobs/university/welcome-header-dfc7efd8cae359fbaa8d77d3d14325e5.jpg) 50% 0 no-repeat;
+}
+
+@media (min-width: 1128px)
+{
+	.photo-grid {
+	    height: 300px;
+	}	
+}
+
+.photo-grid {
+    height: 200px;
+}
+
 >>>>>>> origin/master
 

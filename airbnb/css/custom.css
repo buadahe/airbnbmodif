@@ -1115,6 +1115,15 @@ h1, .h1 {
     font-weight: normal;
 }
 
+.jobs-card {
+    display: block;
+    background: #fff;
+    -webkit-transition: background ease-in-out 200ms;
+    -o-transition: background ease-in-out 200ms;
+    -moz-transition: background ease-in-out 200ms;
+    transition: background ease-in-out 200ms;
+}
+
 .link-reset {
     color: inherit;
 }
