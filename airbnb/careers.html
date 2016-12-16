@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Frame A Trip</title>
+		<meta name="description" content="Item Transition Inspiration | Demo 2: Full Width" />
+		<meta name="keywords" content="item transition, css animation, inspiration, web design, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/bed.png">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/fxfullwidth.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicknav.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+	</head>
+
+	<body>
+		<nav id="navbar" class="navbar navbar-default navbar-static-top" style="color: black !important">
+	        <div class="container-fluid" style="margin-top: 5px;">
+	        	<div class="navbar-header">
+	          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+	          		</button>
+	          		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span></a>
+	        	</div>
+	        	<ul class="nav navbar-nav navbar-right">
+    				<li><a href="host">Menjadi Tuan Rumah</a></li>
+    				<li><a href="help.html">Bantuan</a></li>
+    				<!-- <li><a href="#">Daftar</a></li> -->
+    				<li><a href="#" data-toggle="modal" data-target="#login">Log Masuk</a></li>
+    				<a class="navbar-brand" href="profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>	
+  				</ul>
+	        </div>
+	    </nav>
+
+	    <main id="site-content" role="main">
+
+	    	<div class="subnav" data-sticky="true">
+	    		<div class="page-container page-container-responsive">
+	    			<ul class="subnav-list">
+	    				<li>
+	    					<a class="subnav-item" href="/about/about-us" aria-selected="true">
+	    						Selamat Datang
+	    						<i class="show-sm subnav-icon-toggle icon icon-chevron-down pull-right"></i>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a class="subnav-item" href="/press/news">
+	    						Divisi
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a class="subnav-item" href="/careers">
+	    						Lokasi
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a class="subnav-item" href="http://blog.airbnb.com/">
+	    						Teknisi
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a class="subnav-item" href="http://blog.airbnb.com/">
+	    						University
+	    					</a>
+	    				</li>s
+	    			</ul>
+	    		</div>
+	    	</div><div class="subnav-placeholder placeholding" style="height: 40px;"></div>
+
+	    	<div id="content-slides">
+	    	  <div class="media-cover media-cover-dark">
+	    	    <section class="story life">
+	    	    </section>
+	    	  </div>
+	    	  <div class="row row-table row-full-height">
+	    	    <div class="col-middle col-sm-10 col-md-7 col-center text-contrast text-center">
+	    	      <h1 class="jobs-header-text">
+	    	        Ciptakan dunia yang menginspirasi koneksi antar manusia
+	    	      </h1>
+	    	    </div>
+	    	  </div>
+	    	</div>
+
+	    	<div class="page-container-responsive">
+	    	  <div class="row text-center space-4 space-top-2">
+	    	    <div class="col-md-4">
+	    	      <div class="panel-body">
+	    	        <i class="icon icon-size-4 icon-rausch icon-edit"></i>
+	    	        <h4>
+	    	          Buat
+	    	        </h4>
+	    	        <p>
+	    	          Kami membangun pengalaman terbaik bagi komunitas kita - sebagai sebuah tim.
+	    	        </p>
+	    	      </div>
+	    	    </div>
+	    	    <div class="col-md-4">
+	    	      <div class="panel-body">
+	    	        <i class="icon icon-size-4 icon-rausch icon-question-alt"></i>
+	    	        <h4>
+	    	          Pelajari
+	    	        </h4>
+	    	        <p>
+	    	          Kami mencari inspirasi dan pembelajaran dari dalam dan luar.
+	    	        </p>
+	    	      </div>
+	    	    </div>
+	    	    <div class="col-md-4">
+	    	      <div class="panel-body">
+	    	        <i class="icon icon-size-4 icon-rausch icon-balloons"></i>
+	    	        <h4>
+	    	          Bermain
+	    	        </h4>
+	    	        <p>
+	    	          Hidup adalah segala sesuatu yang terjadi saat Anda sibuk bekerja. Kami memastikan Anda menikmatinya.
+	    	        </p>
+	    	      </div>
+	    	    </div>
+	    	  </div>
+	    	</div>
+
+	    	<div class="page-container-full panel-light">
+	    	  <div class="page-container-responsive">
+	    	    <div class="row space-top-4"></div>
+	    	    <div class="row space-8 space-top-8">
+	    	      <div class="col-sm-12 text-center">
+	    	        <h2 class="space-4">
+	    	          Kebersamaan di Airbnb
+	    	        </h2>
+	    	      </div>
+	    	      <div class="col-sm-10 text-center-sm col-center">
+	    	        <p>
+	    	          Tidak ada pergerakan global berasal dari satu individu saja. Dibutuhkan seluruh tim yang bahu membahu membangun hal yang besar. Bersama, kami bekerja keras, tertawa keras-keras, dan berpikir lebih keras lagi, kami menggunakan ratusan kertas Post-It setiap minggu, dan melakukan high-five terbanyak di kota.
+	    	        </p>
+	    	      </div>
+	    	    </div>
+
+	    	    <div class="row space-8 space-top-8 text-center">
+	    	      <div class="col-md-8 col-sm-12 space-4">
+	    	        <div class="media-photo">
+	    	          <img alt="1-main-large-5c6ba7d29406425d92f7225394653d82" class="img-responsive" src="https://a1.muscache.com/airbnb/static/jobs/new/welcome/1-main-large-5c6ba7d29406425d92f7225394653d82.jpg">
+	    	        </div>
+	    	      </div>
+	    	      <div class="col-md-4 col-sm-12">
+	    	        <div class="media-photo space-4">
+	    	          <img alt="4-small-right-top-2daef0176cd4b4a1f850a5164c127e82" class="img-responsive" src="https://a1.muscache.com/airbnb/static/jobs/new/welcome/4-small-right-top-2daef0176cd4b4a1f850a5164c127e82.jpg">
+	    	        </div>
+	    	        <div class="media-photo">
+	    	          <img alt="3-small-right-btm-f68f5e09ee768eb336931af526533d30" class="img-responsive" src="https://a2.muscache.com/airbnb/static/jobs/new/welcome/3-small-right-btm-f68f5e09ee768eb336931af526533d30.jpg">
+	    	        </div>
+	    	      </div>
+	    	    </div>
+	    	    <div class="row space-8 space-top-4 text-center">
+	    	      <div class="col-sm-12 col-lg-10 col-center">
+	    	        <div class="row space-8">
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Menjadi Tuan Rumah
+	    	              </h3>
+	    	              <p>
+	    	                Kolaboratif. Mengantisipasi kebutuhan orang lain. Siaga. Autentik. Selalu mendengarkan. Menyokong serta mengatasi gangguan bagi orang lain. Mempertimbangkan orang seutuhnya. Rendah hati.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Juarai Misi
+	    	              </h3>
+	    	              <p>
+	    	                Penuh semangat. Memiliki komitmen. Optimis. Mendahulukan komunitas Airbnb. Merasa memiliki dan produktif. Memelihara kebersamaan.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	        </div>
+	    	        <div class="row space-8">
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Setiap Kerangka Memiliki Makna
+	    	              </h3>
+	    	              <p>
+	    	                Berpikir secara keseluruhan. Cermat akan kualitas. Mengerti detail dan memprioritaskan yang tepat.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Menjadi Wirausahawan "Sereal"
+	    	              </h3>
+	    	              <p>
+	    	                Kreatif. Menerima keterbatasan. Berorientasi pada hasil. Gigih.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	        </div>
+	    	        <div class="row space-8">
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Sederhanakan
+	    	              </h3>
+	    	              <p>
+	    	                Memiliki prioritas. Mengatasi masalah ke akarnya. Mengambil dan mengomunikasikan keputusan yang tegas.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	          <div class="col-md-6 col-sm-12">
+	    	            <div class="panel-body">
+	    	              <h3>
+	    	                Sambut Petualangan
+	    	              </h3>
+	    	              <p>
+	    	                Fleksibel. Tidak takut risiko. Senantiasa belajar. Ingin tahu. Berpikiran terbuka. Menciptakan kegembiraan dalam pekerjaan mereka.
+	    	              </p>
+	    	            </div>
+	    	          </div>
+	    	        </div>
+	    	      </div>
+	    	    </div>
+	    	  </div>
+	    	</div>
+
+	    	<div class="page-container-responsive">
+	    	  <div class="row space-top-4"></div>
+	    	  <div class="space-8 space-top-8">
+	    	    <div class="space-8">
+	    	      <div class="col-8 col-center">
+	    	        <h2 class="text-center space-4">
+	    	          Kami Belajar Dari yang Terbaik
+	    	        </h2>
+	    	        <p class="text-lead">
+	    	          Kami berkomitmen untuk terus menerus belajar. Itu sebabnya kami mengadakan kegiatan Mengobrol dekat Perapian, yang menghadirkan para pemimpin industri untuk berbagi pengalaman dan pengetahuannya. Dari para CEO hingga musisi, para pemimpin ini selalu memiliki sesuatu yang tak ternilai harganya untuk kita pelajari.
+	    	        </p>
+	    	      </div>
+	    	    </div>
+
+	    	    <div class="row">
+	    	      <div class="col-12">
+	    	          <div class="row space-4">
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a0.muscache.com/airbnb/static/jobs/new/fireside-alison-johnson-04afec1a14ee6f92e5bb67500dd4a455.jpg" width="70" height="70" alt="Alison Johnson">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          The world is counting on you.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Alison Johnson<br>
+	    	                          Former VP marketing @ Apple
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a1.muscache.com/airbnb/static/jobs/new/fireside-crumpton-afeb0730c82f5a2908943b14d5e59548.jpg" width="70" height="70" alt="Ambassador Crumpton">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          It's all about knowing who you are.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Ambassador Crumpton<br>
+	    	                          24 years with the CIA &amp; strategic international advisor
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	          </div>
+	    	          <div class="row space-4">
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a2.muscache.com/airbnb/static/jobs/new/fireside-tim-westergren-3ef0943c5858e3b0d7873f1264c8e654.jpg" width="70" height="70" alt="Tim Westergren">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          Stay deeply humble.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Tim Westergren<br>
+	    	                          Founder of Pandora
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a2.muscache.com/airbnb/static/jobs/new/fireside-josh-elman-1511fcb69325d4e4ba2a6e0b28ecd771.jpg" width="70" height="70" alt="Josh Elman">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          Find your 'a ha' moment.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Josh Elman<br>
+	    	                          Product Guy &amp; VC @ Greylock Partners
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	          </div>
+	    	          <div class="row space-4">
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a1.muscache.com/airbnb/static/jobs/new/fireside-will-i-am-3f6404194444800dd4aa9c162d3977e3.jpg" width="70" height="70" alt="Will.I.Am">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          If you don't do shit, you can't boo shit.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Will.I.Am<br>
+	    	                          Musician
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	              <div class="col-6">
+	    	                <div class="row">
+	    	                  <div class="col-sm-3 col-lg-2">
+	    	                  <div class="media-photo media-round">
+	    	                    <img src="https://a0.muscache.com/airbnb/static/jobs/new/fireside-alfred-lin-5def26835cad97752a1e983a1d8dd44c.jpg" width="70" height="70" alt="Alfred Lin">
+	    	                  </div>
+	    	                  </div>
+	    	                  <div class="col-sm-9 col-lg-10">
+	    	                    <div class="panel panel-quote panel-quote-left">
+	    	                      <div class="panel-body">
+	    	                        <p>
+	    	                          Always be transparent in your company.
+	    	                        </p>
+	    	                        <p class="text-muted">
+	    	                          Alfred Lin<br>
+	    	                          Former COO of Zappos/VC @Sequoia_Capital
+	    	                        </p>
+	    	                      </div>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	              </div>
+	    	          </div>
+	    	      </div>
+	    	    </div>
+	    	    <div class="row">
+	    	      <div class="col-8 col-center">
+	    	        <p>
+	    	          <em>
+	    	            Yang lainnya termasuk:
+	    	            Mike Holston, Jawed Karim, Maynard Webb, Greg McAdoo, Reid Hoffman,
+	    	            Avie Tevanian, Jeff Jordan, Rohan Oza, Ron Conway, Greg Fant, Gregory Waldorf,
+	    	            David Chiu, Chris Curtis, Josh Silverman, John Maeda
+	    	          </em>
+	    	        </p>
+	    	      </div>
+	    	    </div>
+	    	    <section class="space-8 space-top-8" id="thingsWeLoveCarousel">
+	    	      <div class="row space-4 space-top-8">
+	    	        <div class="col-12 text-center">
+	    	          <h2>
+	    	            Kami Mencintai Tim Kami
+	    	          </h2>
+	    	        </div>
+	    	      </div>
+	    	      <div class="row space-8 text-center">
+	    	        <div class="col-md-1 hide-sm">
+	    	          <a class="carousel-control" href="#thingsWeLoveCarousel" data-slide="prev">
+	    	            <i class="icon icon-chevron-left icon-size-3"></i>
+	    	          </a>
+	    	        </div>
+	    	        <div class="col-sm-12 col-md-10">
+	    	          <div class="carousel slide">
+	    	            <div class="carousel-inner">
+	    	                <div class="item active">
+	    	                  <div class="row">
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/jpxInV9es6M" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Tamu pertama kami Amol" class="img-responsive" src="https://a2.muscache.com/airbnb/static/jobs/new/life-video-amol-d445cc427fb96fe91b297125e097e22f.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Tamu pertama kami Amol</h4>
+	    	                    </div>
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/0sUD312IpOo" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Pegawai Magang Kami" class="img-responsive" src="https://a2.muscache.com/airbnb/static/jobs/new/life-video-interns-111093c0c1b36532fea4040ed0e601bf.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Pegawai Magang Kami</h4>
+	    	                    </div>
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/idmHejjVfVs" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Orang Tua Kami" class="img-responsive" src="https://a0.muscache.com/airbnb/static/jobs/new/life-video-parents-7a9ebaa326889acb502aa2bac6ccda24.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Orang Tua Kami</h4>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	                <div class="item ">
+	    	                  <div class="row">
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/FM7WgOePTFw" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Komunitas Kami" class="img-responsive" src="https://a0.muscache.com/airbnb/static/jobs/new/life-video-community-c87c802a6b6beafe35a8bf939066bbd6.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Komunitas Kami</h4>
+	    	                    </div>
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/JPHSG_lLKJ8" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Bekerja Bersama" class="img-responsive" src="https://a0.muscache.com/airbnb/static/jobs/new/life-video-working-together-0b69c081d6ea9ae60037dca678cc4764.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Bekerja Bersama</h4>
+	    	                    </div>
+	    	                    <div class="col-sm-12 col-md-4">
+	    	                      <div class="media-photo
+	    	                        media-photo-block video-trigger" data-url="www.youtube.com/embed/lVIz0ZbJikw" style="cursor:pointer; height:145px">
+	    	                        <div class="media-cover media-cover-dark">
+	    	                          <img alt="Para Tuan Rumah Kami" class="img-responsive" src="https://a1.muscache.com/airbnb/static/jobs/new/life-video-hosts-a976feab654ff31a62a047dbdc8cdb31.jpg" width="315">
+	    	                        </div>
+	    	                        <div class="va-container va-container-v va-container-h">
+	    	                          <i class="icon icon-video-play icon-transparent text-contrast icon-size-3 va-middle"></i>
+	    	                        </div>
+	    	                      </div>
+	    	                      <h4>Para Tuan Rumah Kami</h4>
+	    	                    </div>
+	    	                  </div>
+	    	                </div>
+	    	            </div>
+	    	          </div>
+	    	        </div>
+	    	        <div class="hide-sm col-md-1">
+	    	          <a class="carousel-control" href="#thingsWeLoveCarousel" data-slide="next">
+	    	            <i class="icon icon-chevron-right icon-size-3"></i>
+	    	          </a>
+	    	        </div>
+	    	      </div>
+	    	    </section>
+	    	  </div>
+	    	</div>
+
+	    	<section class="page-container-full text-contrast text-center background-beach">
+	    	  <div class="page-container-responsive">
+	    	    <div class="row space-4 space-top-8">
+	    	      <div class="col-12">
+	    	        <div class="cultureContent">
+	    	          <h2 class="jobs-header-text">
+	    	            Daftar Sekarang dan Ubah Industri Pariwisata
+	    	          </h2>
+	    	        </div>
+	    	      </div>
+	    	    </div>
+	    	    <div class="row space-4">
+	    	      <div class="col-4">
+	    	        <ul class="list-unstyled">
+	    	          <li class="space-2">
+	    	            Program Kesehatan Komprehensif
+	    	          </li>
+	    	          <li class="space-2">
+	    	            Program Makanan dan Snack Sehat
+	    	          </li>
+	    	          <li class="space-2">
+	    	            Budaya Belajar
+	    	          </li>
+	    	        </ul>
+	    	      </div>
+	    	      <div class="col-4">
+	    	        <ul class="list-unstyled">
+	    	          <li class="space-2">
+	    	            Kesejahteraan di Tempat Kerja
+	    	          </li>
+	    	          <li class="space-2">
+	    	            Kredit Wisata Tahunan
+	    	          </li>
+	    	          <li class="space-2">
+	    	            Program Pengasuhan Anak/Kehamilan
+	    	          </li>
+	    	        </ul>
+	    	      </div>
+	    	      <div class="col-4">
+	    	        <ul class="list-unstyled">
+	    	          <li class="space-2">
+	    	            Cuti Pribadi
+	    	          </li>
+	    	          <li class="space-2">
+	    	            Tamasya dan Happy Hour
+	    	          </li>
+	    	          <li class="space-2">
+	    	          Dukungan Kerja Sukarela Berbayar
+	    	          </li>
+	    	        </ul>
+	    	      </div>
+	    	    </div>
+	    	    <div class="row space-8">
+	    	      <div class="col-center col-4">
+	    	        <a href="/careers/departments" class="btn btn-block">
+	    	          Ajukan Lamaran Hari Ini
+	    	        </a>
+	    	      </div>
+	    	    </div>
+	    	  </div>
+	    	</section>
+
+	    </main>
+
+
+	    <div id="footer" class="container-brand-light footer-surround footer-container">
+	    	<footer class="page-container-responsive footer-container" role="contentinfo">
+	    		<div class="row row-condensed">
+	    			<div class="language-curr-picker col-md-2">
+	    				<div class="clearfix">
+	    					<div class="language-picker col-sm-6 col-md-12"><div class="select select-large select-block space-2"><label for="language-selector" class="screen-reader-only"><span>Choose language</span></label><select class="language-selector" id="language-selector"><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option><option value="da">Dansk</option><option value="de">Deutsch</option><option selected="" value="en">English</option><option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option><option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option><option value="no">Norsk</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="sv">Svenska</option><option value="tr">Türkçe</option><option value="is">Íslenska</option><option value="cs">Čeština</option><option value="ru">Русский</option><option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option><option value="zh-TW">中文 (繁體)</option><option value="ja">日本語</option><option value="ko">한국어</option></select></div></div>
+	    					<div class="currency-picker col-sm-6 col-md-12"><div class="space-2"><label for="currency-selector" class="screen-reader-only"><span>Choose currency</span></label><div class="select select-block select-large"><select id="currency-selector"><option value="AED">AED</option><option value="ARS">ARS</option><option value="AUD">AUD</option><option value="BGN">BGN</option><option value="BRL">BRL</option><option value="CAD">CAD</option><option value="CHF">CHF</option><option value="CLP">CLP</option><option value="CNY">CNY</option><option value="COP">COP</option><option value="CRC">CRC</option><option value="CZK">CZK</option><option value="DKK">DKK</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="HKD">HKD</option><option value="HRK">HRK</option><option value="HUF">HUF</option><option selected="" value="IDR">IDR</option><option value="ILS">ILS</option><option value="INR">INR</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="MAD">MAD</option><option value="MXN">MXN</option><option value="MYR">MYR</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PEN">PEN</option><option value="PHP">PHP</option><option value="PLN">PLN</option><option value="RON">RON</option><option value="RUB">RUB</option><option value="SAR">SAR</option><option value="SEK">SEK</option><option value="SGD">SGD</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="UAH">UAH</option><option value="USD">USD</option><option value="UYU">UYU</option><option value="VND">VND</option><option value="ZAR">ZAR</option></select></div></div></div>
+	    					<div class="cx-number"></div>
+	    				</div>
+
+	    			</div>
+
+	    			<div class="col-md-2 col-md-offset-1 hide-sm">
+	    				<h2 class="h5">Frame-A-Trip</h2>
+	    				<ul class="list-layout">
+	    					<li><a href="/about/about-us" class="link-contrast">About</a></li>
+	    					<li><a href="/careers" class="link-contrast">Careers</a></li>
+	    					<li><a href="/press/news" class="link-contrast">Press</a></li>
+	    					<li><a href="/policies" class="link-contrast">Policies</a></li>
+	    					<li><a href="/help?from=footer" class="link-contrast">Help</a></li>
+	    				</ul>
+	    			</div>
+
+	    			<div class="col-md-2 col-md-offset-1 hide-sm">
+	    				<h2 class="h5">Discover</h2>
+	    				<ul class="list-layout">
+	    					<li><a href="/trust" class="link-contrast">Trust &amp; Safety</a></li>
+	    					<li><a href="/invite?r=6" class="link-contrast">Travel Credit</a></li>
+	    					<li><a href="/gift?s=footer" class="link-contrast">Gift Cards</a></li>
+	    					<li><a href="#" class="link-contrast" target="_blank">Frame-A-trip Action</a></li>
+	    					<li><a href="/business-travel?s=footer" class="link-contrast">Business Travel</a></li>
+	    					<li><a href="/things-to-do" class="link-contrast">Guidebooks</a></li>
+	    				</ul>
+	    			</div>
+
+	    			<div class="col-md-2 col-md-offset-1 hide-sm">
+	    				<h2 class="h5">Hosting</h2>
+	    				<ul class="list-layout">
+	    					<li><a href="/host" class="link-contrast">Why Host</a></li>
+	    					<li><a href="/hospitality" class="link-contrast">Hospitality</a></li>
+	    					<li><a href="/help/responsible-hosting" class="link-contrast">Responsible Hosting</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+
+	    		<hr class="footer-divider space-top-8 space-4 hide-sm">
+
+	    		<div class="footer-table">
+	    			<ul class="list-layout list-inline icon-list" itemscope="" itemtype="http://schema.org/Organization">
+	    				<i class="icon icon-frame-alt icon-gray belo-icon icon-size-2"></i>
+	    				<div class="text-muted">
+	    					© Frame-A-Trip, Inc.
+	    				</div>
+	    			</ul>
+	    			<ul class="list-layout list-inline icon-list right-list" itemscope="" itemtype="http://schema.org/Organization">
+
+	    				<link itemprop="url" href="#">
+
+	    				<li><a href="/terms" class="link-contrast">Terms &amp; Privacy</a></li>
+
+	    			</ul>
+	    		</div>
+	    	</footer>
+	    </div>
+
+	    <script src="js/classie.js"></script>
+	    <script src="js/main.js"></script>
+	    <script src="js/jquery.slicknav.min.js"></script>
+	    <!--<script src="js/common.js"></script>-->
+	    <script>
+	    	//------ main nav menu ----- //
+	    	$(document).ready(function() {
+	    		$('.navbar').css({'position':'relative'});
+	    		$(window).scroll(function () {
+	    			if (jQuery(this).scrollTop() > 60) {
+
+	    				$('.subnav').addClass('pinned');
+	    				$('.navbar').removeClass('navbar-scrolled-down');
+
+	    			} else {
+	    				$('.subnav').removeClass('pinned');
+	    				$('.navbar').removeClass('navbar-scrolled-down');
+	    			}
+
+	    			function checkWidth() {
+	    				var windowSize = $(window).width();
+
+	    				if (windowSize > 768) {
+	    					if (jQuery(this).scrollTop() > 400) {
+
+	    						$('.navbar').addClass('navbar-scrolled-down');
+	    						//  $('.logo').css({'z-index':'99', 'position':'fixed', 'top':'11px'});
+	    					} else {
+	    						$('.navbar').removeClass('navbar-scrolled-down');
+	    						//  $('.logo').css({'z-index':'99', 'position':'absolute', 'top':'-45px'});
+	    					}
+	    				}
+
+	    			}
+
+	    			// Execute on load
+	    			checkWidth();
+	    			// Bind event listener
+	    			$(window).resize(checkWidth);
+
+	    		});
+	    		var countslider = 0;
+
+	    		$(".next-slider").click(function(){
+	    			var val = $(this).attr('value');
+	    			var countslider = $('#slider'+val).attr('value');
+	    			countslider = parseFloat(countslider)+ parseFloat(-25);
+	    			$("#slider"+val).css({'transform': 'translateX('+countslider+'%)'});
+	    			$("#prev-slider"+val).show();
+	    			$('#slider'+val).attr('value',countslider);
+	    			if(countslider == -50){
+	    				$("#next-slider"+val).hide();
+	    			}else{
+	    				$("#next-slider"+val).show();
+	    			}
+	    		});
+
+	    		$(".prev-slider").click(function(){
+	    			var val = $(this).attr('value');
+	    			var countslider = $('#slider'+val).attr('value');
+	    			countslider = parseFloat(countslider)+ parseFloat(25);
+	    			$("#slider"+val).css({'transform': 'translateX('+countslider+'%)'});
+	    			$("#prev-slider"+val).show();
+	    			$('#slider'+val).attr('value',countslider);
+	    			if(countslider == 0){
+	    				$("#prev-slider"+val).hide();
+	    				$("#next-slider"+val).show();
+	    			}else{
+	    				$("#prev-slider"+val).show();
+	    				$("#next-slider"+val).show();
+	    			}
+	    		});
+	    		if(countslider == 0){
+	    			$(".prev-slider").hide();
+	    		}
+
+
+
+	    	});
+	    </script>
+
+	</body>
+</html>

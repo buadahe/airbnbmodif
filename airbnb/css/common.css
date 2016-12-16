@@ -472,5 +472,46 @@ strong {
 .va-middle {
     vertical-align: middle;
 }
+
+.subnav-placeholder {
+    display: none;
+}
+
+#home-slides, #content-slides {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#content-slides, .story {
+    overflow: hidden;
+    height: 500px;
+}
+
+.media-cover, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#home-slides .story.life, #content-slides .story.life {
+    background: url(https://a1.muscache.com/airbnb/static/jobs/new/hero/hero-life2-89ec321ebdc4088a774de4dc9d041f09.jpg) 50% 0 no-repeat;
+}
+#home-slides .story, #content-slides .story {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+#content-slides, .story {
+    overflow: hidden;
+    height: 500px;
+}
+
 >>>>>>> origin/master
 
