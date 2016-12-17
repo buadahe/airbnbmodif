@@ -46,8 +46,9 @@
 .text_1lobov3-o_O-size_regular_1n7tijc-o_O-weight_light_1jo1qff {
     font-weight: 200 !important;
     color: #484848 !important;
-    font-family: Circular !important;
+    /*font-family: Circular !important;*/
     margin: 0px !important;
+    margin-bottom: 10px !important; 
     word-wrap: break-word !important;
     font-size: 19px !important;
     line-height: 24px !important;
@@ -66,7 +67,7 @@
 }
 
 .book-it__container {
-    position: absolute;
+    position: static;
     width: 315px;
     z-index: 1001;
     border-top: 0;
@@ -568,5 +569,125 @@ strong {
     height: 200px;
 }
 
+@media (min-width: 744px)
+{
+	.sliding-carousel .carousel-item {
+	    float: left;
+	}
+
+	.sliding-carousel {
+	    position: relative;
+	}
+	.sliding-carousel .carousel-view {
+	    overflow: hidden;
+	    position: relative;
+	}
+	.sliding-carousel .carousel-item-list {
+	    left: 0;
+	    position: absolute;
+	    -webkit-transition: left .2s ease-in-out;
+	    -o-transition: left .2s ease-in-out;
+	    -moz-transition: left .2s ease-in-out;
+	    transition: left .2s ease-in-out;
+	}
+	.sliding-carousel.similar-listings .listing .panel-image {
+	    height: 210px;
+	}	
+}
+
+.listing-img {
+    overflow: hidden;
+    padding-bottom: 67%;
+}
+
+.panel-image {
+    position: relative;
+}
+
+.listing-img .wl-social-connection-panel {
+    z-index: 2;
+}
+.panel-overlay-top-right {
+    top: 15px;
+    right: 15px;
+}
+
+.panel-overlay-top-left, .panel-overlay-top-right, .panel-overlay-bottom-left, .panel-overlay-bottom-right {
+    position: absolute;
+}
+
+.carousel-item {
+    padding-left: 0;
+}
+
+.panel-overlay-listing-label {
+    bottom: 30px;
+    left: 0;
+    padding: 7px 10px;
+}
+.panel-overlay-label {
+    background-color: #2d2d2d;
+    background-color: rgba(45,45,45,0.9);
+    padding: 10px;
+    color: #fff;
+}
+.panel-overlay-bottom-left {
+    bottom: 15px;
+    left: 15px;
+}
+.panel-overlay-top-left, .panel-overlay-top-right, .panel-overlay-bottom-left, .panel-overlay-bottom-right {
+    position: absolute;
+}
+
+.panel-overlay-listing-label .price-label {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.panel-overlay-listing-label .price-label sup {
+    font-weight: bold;
+}
+.panel-overlay-listing-label .price-label sup, .panel-overlay-listing-label .price-label .price-label--unit-label {
+    font-size: .58333em;
+}
+sup {
+    top: -0.5em;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.panel-card-section {
+    padding: 10px !important;
+}
+
+.card-profile-picture {
+    z-index: 2;
+}
+
+.card-profile-picture {
+    height: 60px;
+    width: 60px;
+}
+.card-profile-picture-offset {
+    position: absolute;
+    top: -50px;
+    margin-bottom: -40px;
+    margin-left: 72%;
+}
+
+.text_1chds16-o_O-size_reduced_1upqmbv {
+    font-weight: normal !important;
+    color: #484848 !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
+    letter-spacing: 0.2px !important;
+}
 >>>>>>> origin/master
 
