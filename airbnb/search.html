@@ -11,6 +11,7 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="img/bed.png">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -18,7 +19,12 @@
 		<link rel="stylesheet" type="text/css" href="css/fxfullwidth.css" />
 		<link rel="stylesheet" type="text/css" href="css/slicknav.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-stars.css">
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/css/bootstrap-slider.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.js"></script>
 	</head>
 
 	<body>
@@ -51,32 +57,32 @@
 	    </nav>
 
 	    <div class="row">
-	    	<div class="col-md-7" style="padding: 0px">
-			    <div class="container-fluid container-search">
+	    	<div class="col-md-7 sidebar" style="padding: 0px">
+				<div class="filters collapse">
+			    <div class="container-fluid container-search space-4">
 			    	<div class="col-md-2 search-label">
 			    		<label>Tanggal</label>
 			    	</div>
 			    	<div class="col-md-3 small-padding">
-			    		<input type="text" class="form-control input-box" value="26-11-2016">
+						<input id="datetimepicker6" class="form-control input-box" name="from" type="text" placeholder="Check In" autocomplete="off" id="checkin" value="">
 			    	</div>
 			    	<div class="col-md-3 small-padding">
-			    		<input type="text" class="form-control input-box" value="26-11-2016">
+						<input id="datetimepicker7" class="form-control input-box" name="from" type="text" placeholder="Check In" autocomplete="off" id="checkin" value="">
 			    	</div>
 			    	<div class="col-md-3 small-padding">
 			    		<select class="form-control input-box">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
+							<option>1 Guest</option>
+							<option>2 Guest</option>
+							<option>3 Guest</option>
+							<option>4 Guest</option>
+							<option>5 Guest</option>
 						</select>
 			    	</div>
 			    </div>
-			    <hr>
 
-			    <div class="container-fluid container-search">
+			    <div class="container-fluid container-search space-4">
 			    	<div class="col-md-2 search-label">
-			    		<label>Tipe Kamar</label>&nbsp;<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+			    		<label style="margin:0">Tipe Kamar</label>&nbsp;<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 			    	</div>
 			    	<div class="col-md-3 small-padding">
 			    		<div class="input-box input-div-gray">
@@ -118,25 +124,26 @@
 			    		</div>
 			    	</div>
 			    </div>
-			    <hr>
 
-			    <div class="container-fluid container-search">
-			    	<div class="col-md-3 search-label">
+			    <div class="container-fluid container-search space-4">
+			    	<div class="col-md-2 search-label">
 			    		<label>Rentang Harga</label>
 			    	</div>
-			    	<div class="col-md-3 small-padding">
-			    		<input type="text" class="form-control input-box" value="Rp 0">
-			    	</div>
-			    	<div class="col-md-1 search-label">
-			    		<label>To :</label>
-			    	</div>
-			    	<div class="col-md-3 small-padding">
-			    		<input type="text" class="form-control input-box" value="Rp 5.000.000">
-			    	</div>
-			    </div>
-			    <hr>
+					<div class="col-lg-10">
+					<div class="p2-histogram"><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height:0;"></div><div class="p2-histogram-bar" style="height:0;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 2px;"></div><div class="p2-histogram-bar" style="height: 4px;"></div><div class="p2-histogram-bar" style="height: 5px;"></div><div class="p2-histogram-bar" style="height: 14px;"></div><div class="p2-histogram-bar" style="height: 21px;"></div><div class="p2-histogram-bar" style="height: 17px;"></div><div class="p2-histogram-bar" style="height: 21px;"></div><div class="p2-histogram-bar" style="height: 24px;"></div><div class="p2-histogram-bar" style="height: 25px;"></div><div class="p2-histogram-bar" style="height: 16px;"></div><div class="p2-histogram-bar" style="height: 15px;"></div><div class="p2-histogram-bar" style="height: 13px;"></div><div class="p2-histogram-bar" style="height:13px;"></div><div class="p2-histogram-bar" style="height: 8px;"></div><div class="p2-histogram-bar" style="height:9px;"></div><div class="p2-histogram-bar" style="height: 6px;"></div><div class="p2-histogram-bar" style="height: 5px;"></div><div class="p2-histogram-bar" style="height: 6px;"></div><div class="p2-histogram-bar" style="height: 4px;"></div><div class="p2-histogram-bar" style="height: 6px;"></div><div class="p2-histogram-bar" style="height: 5px;"></div><div class="active p2-histogram-bar" style="height: 5px;"></div><div class="active p2-histogram-bar" style="height: 4px;"></div><div class="active p2-histogram-bar" style="height: 4px;"></div><div class="active p2-histogram-bar" style="height:3px;"></div><div class="active p2-histogram-bar" style="height: 3px;"></div><div class="active p2-histogram-bar" style="height: 1px;"></div><div class="active p2-histogram-bar" style="height: 2px;"></div><div class="active p2-histogram-bar" style="height: 1px;"></div><div class="active p2-histogram-bar" style="height: 3px;"></div><div class="active p2-histogram-bar" style="height: 3px;"></div><div class="active p2-histogram-bar" style="height: 1px;"></div><div class="active p2-histogram-bar" style="height: 1px;"></div><div class="active p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 2px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height:0;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 2px;"></div><div class="p2-histogram-bar" style="height: 1px;"></div><div class="p2-histogram-bar" style="height: 2px;"></div></div>
+					<input id="ex2" type="text" class="span2" value="" data-slider-min="100000" data-slider-max="15000000" data-slider-step="5" data-slider-value="[100000,15000000]"/>
+					<div class="row space-top-4">
+						<div class="col-lg-5">
+							<span id="price-range-low">1500000</span>
+						</div>
+						<div  class="col-lg-5 text-right">
+							<span id="price-range-high">8000000</span>
+						</div>
+					</div>
+					</div>
+			     </div>
 
-			    <div class="container-fluid container-search">
+			    <div class="container-fluid container-search filters-section space-4">
 			    	<div class="col-md-2 search-label">
 			    		<label>Luas</label>
 			    	</div>
@@ -168,9 +175,9 @@
 						</select>
 			    	</div>
 			    </div>
-			    <hr>
 
-			    <div class="container-fluid container-search">
+
+			    <div class="container-fluid container-search filters-section space-4">
 			    	<div class="col-md-2 search-label">
 			    		<label>Fasilitas</label>
 			    	</div>
@@ -205,9 +212,9 @@
 			    		</div>
 			    	</div>
 			    </div>
-			    <hr>
 
-			    <div class="container-fluid container-search">
+
+			    <div class="container-fluid container-search filters-section space-4">
 			    	<div class="col-md-2 search-label">
 			    		<label>Fasilitas</label>
 			    	</div>
@@ -242,16 +249,556 @@
 			    		</div>
 			    	</div>
 			    </div>
+
+				<div class="filters-section" style="height:322px"></div>
+
+				<div class="panel-light panel-btn-sm filters-footer filters-footer-sm fixed">
+					<div class="row row-condensed">
+						<div class="col-md-8 col-lg-7 col-md-offset-4 col-lg-offset-5">
+							<div class="row row-condensed space-sm-7">
+								<div class="col-sm-6">
+									<button class="btn btn-block cancel-btn" onclick="filtersoff()">
+										<span>Cancel</span>
+									</button>
+								</div>
+								<div class="col-sm-6">
+									<button class="btn btn-block btn-primary apply-filters-btn">
+										<span>Apply filters</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				</div>
+
+				<div id="filtersign">
+				<div class="sidebar-header panel-body clearfix panel-light">
+						<div class="pull-left">
+								<div class="applied-filters-container hide-sm">
+					<span class="pull-left show-filters">
+						<button type="button" class="btn" onclick="filters()">
+							<span>Filters</span>
+							<span></span>
+						</button>
+					</span>
+								</div>
+							</div>
+						<div>
+							<div class="crossfading-panel__container text-right pull-right show-lg">
+								<div class="crossfading-panel crossfading-panel--right pull-right last-minute-trip">
+									<div class="last-minute-panel media-round text-center pull-right crossfading-panel--margin-left">
+										<i class="icon icon-bolt icon-beach h3"></i>
+									</div>
+									<div class="pull-left crossfading-panel__text--lg">
+										<strong>Your trip is today!</strong>
+										<div class="crossfading-panel-body-text text-muted">Use the Instant Book filter to see places you can book right now.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			    <hr>
 
-			    <div class="container-fluid container-search">
-			    	<button class="btn btn-default pull-right" style="margin-left: 1%">Search</button>
-			    	<a href="index.html" class="btn btn-danger pull-right">Cancel</a>
-			    </div>
-			    <hr>
+
+				<div class="">
+					<div class="listing-card-wrapper col-sm-12 col-md-6 space-4">
+						<div class="listingCardWrapper_1804ev2">
+							<div id="listing-15127943" class="listingContainer_1hytgd0">
+								<div aria-hidden="true">
+									<div class="wishlistHeartContainer_g4b3dd">
+					<span class="rich-toggle wish_list_button wishlist-button" data-img="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" data-name="The Cape House Room Plus" data-address="Annapolis" data-hosting_id="15127943" data-review_count="5" data-room_type="Private room" data-star_rating="5" data-host_id="95898088" data-host_img="https://a1.muscache.com/im/pictures/279cc61b-360d-42dc-837d-3b379417fec4.jpg?aki_policy=profile_medium" data-property_type_name="House" data-person_capacity_string="2" data-bedrooms_string="1" tabindex="0" role="button" style="display:block;width:32px;height:32px;">
+						<input type="checkbox" id="wishlist-widget-15127943" name="wishlist-widget-15127943" aria-hidden="true" tabindex="-1">
+							<label for="wishlist-widget-15127943" class="hide-sm" aria-hidden="true" tabindex="-1">
+								<i name="heart" size="2" color="true-rausch" class="fa fa-heart-o icon-true-rausch icon-size-2 rich-toggle-checked"></i>
+								<i name="heart" size="2" class="fa fa-heart-o icon-size-2 wishlist-heart-unchecked rich-toggle-unchecked"></i>
+
+							</label>
+							<div class="tooltip tooltip-right-middle bg-dark-gray wishlist-widget-tooltip" role="tooltip" data-trigger="#wishlist-widget-icon-15127943" data-event="none">
+								<p class="text-white wishlist-widget-tooltip__body"></p>
+							</div>
+						</span>
+									</div>
+									<div id="carousel-1" class="carousel slide space-top-0">
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<a href="#" target="_blank" aria-hidden="true">
+												<div>
+													<img src="https://a1.muscache.com/im/pictures/812bd256-8b01-4b0f-8f6e-ce4a50098f3b.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+												</div>
+											</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/70065418-c00f-4950-a477-77661285787a.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+																					</div>
+										<div class="slideshow-controls">
+											<button href="#carousel-1" data-slide="prev" class="target-prev target-control block-link" aria-label="Previous">
+												<i class="fa fa-chevron-left icon-size-2 icon-white"></i>
+											</button>
+											<button href="#carousel-1" data-slide="next" class="target-next target-control block-link" aria-label="Next">
+												<i class="fa fa-chevron-right icon-size-2 icon-white"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="infoContainer_tfq3vd">
+									<a href="/rooms/15127943?checkin=12%2F17%2F2016&amp;checkout=12%2F21%2F2016&amp;guests=1&amp;adults=1&amp;children=0&amp;infants=0" target="_blank" rel="noopener" data-check-info-section="true" class="linkContainer_6is5x8">
+										<div class="priceRatingContainer_inline_10f0ge3">
+											<div class="priceContainer_inline_10f0ge3">
+									<span class="priceContainer_1rxvror">
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span data-symbolbefore="true">Rp</span>
+											<span data-pricerate="true">1124107</span>
+										</span>
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span></span>
+										</span>
+									</span>
+											</div>
+										</div>
+										<div class="detailsContainer_inline_phj6hl">
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span>Private room in Annapolis</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>1 bed</span>
+									</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>2 guests</span>
+									</span>
+								</span>
+										</div>
+										<div class="statusContainer_a48hyl">
+								<span>
+									<div class="ratingContainer_inline_cm9r68">
+										<select id="review-1">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<span aria-label="5 reviews">
+											<span class="text_1chds16-o_O-size_micro_14ukpr-o_O-inline_10f0ge3">
+												<span class="va-middle">5 reviews</span>
+											</span>
+										</span>
+									</div>
+								</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="listing-card-wrapper col-sm-12 col-md-6 space-4">
+						<div class="listingCardWrapper_1804ev2">
+							<div id="listing-15127943" class="listingContainer_1hytgd0">
+								<div aria-hidden="true">
+									<div class="wishlistHeartContainer_g4b3dd">
+					<span class="rich-toggle wish_list_button wishlist-button" data-img="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" data-name="The Cape House Room Plus" data-address="Annapolis" data-hosting_id="15127943" data-review_count="5" data-room_type="Private room" data-star_rating="5" data-host_id="95898088" data-host_img="https://a1.muscache.com/im/pictures/279cc61b-360d-42dc-837d-3b379417fec4.jpg?aki_policy=profile_medium" data-property_type_name="House" data-person_capacity_string="2" data-bedrooms_string="1" tabindex="0" role="button" style="display:block;width:32px;height:32px;">
+						<input type="checkbox" id="wishlist-widget-15127943" name="wishlist-widget-15127943" aria-hidden="true" tabindex="-1">
+							<label for="wishlist-widget-15127943" class="hide-sm" aria-hidden="true" tabindex="-1">
+								<i name="heart" size="2" color="true-rausch" class="fa fa-heart-o icon-true-rausch icon-size-2 rich-toggle-checked"></i>
+								<i name="heart" size="2" class="fa fa-heart-o icon-size-2 wishlist-heart-unchecked rich-toggle-unchecked"></i>
+
+							</label>
+							<div class="tooltip tooltip-right-middle bg-dark-gray wishlist-widget-tooltip" role="tooltip" data-trigger="#wishlist-widget-icon-15127943" data-event="none">
+								<p class="text-white wishlist-widget-tooltip__body"></p>
+							</div>
+						</span>
+									</div>
+									<div id="carousel-2" class="carousel slide space-top-0">
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a1.muscache.com/im/pictures/812bd256-8b01-4b0f-8f6e-ce4a50098f3b.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/70065418-c00f-4950-a477-77661285787a.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slideshow-controls">
+											<button href="#carousel-2" data-slide="prev" class="target-prev target-control block-link" aria-label="Previous">
+												<i class="fa fa-chevron-left icon-size-2 icon-white"></i>
+											</button>
+											<button href="#carousel-2" data-slide="next" class="target-next target-control block-link" aria-label="Next">
+												<i class="fa fa-chevron-right icon-size-2 icon-white"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="infoContainer_tfq3vd">
+									<a href="/rooms/15127943?checkin=12%2F17%2F2016&amp;checkout=12%2F21%2F2016&amp;guests=1&amp;adults=1&amp;children=0&amp;infants=0" target="_blank" rel="noopener" data-check-info-section="true" class="linkContainer_6is5x8">
+										<div class="priceRatingContainer_inline_10f0ge3">
+											<div class="priceContainer_inline_10f0ge3">
+									<span class="priceContainer_1rxvror">
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span data-symbolbefore="true">Rp</span>
+											<span data-pricerate="true">1124107</span>
+										</span>
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span></span>
+										</span>
+									</span>
+											</div>
+										</div>
+										<div class="detailsContainer_inline_phj6hl">
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span>Private room in Annapolis</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>1 bed</span>
+									</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>2 guests</span>
+									</span>
+								</span>
+										</div>
+										<div class="statusContainer_a48hyl">
+								<span>
+									<div class="ratingContainer_inline_cm9r68">
+										<select id="review-2">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<span aria-label="5 reviews">
+											<span class="text_1chds16-o_O-size_micro_14ukpr-o_O-inline_10f0ge3">
+												<span class="va-middle">5 reviews</span>
+											</span>
+										</span>
+									</div>
+								</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="listing-card-wrapper col-sm-12 col-md-6 space-4">
+						<div class="listingCardWrapper_1804ev2">
+							<div id="listing-15127943" class="listingContainer_1hytgd0">
+								<div aria-hidden="true">
+									<div class="wishlistHeartContainer_g4b3dd">
+					<span class="rich-toggle wish_list_button wishlist-button" data-img="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" data-name="The Cape House Room Plus" data-address="Annapolis" data-hosting_id="15127943" data-review_count="5" data-room_type="Private room" data-star_rating="5" data-host_id="95898088" data-host_img="https://a1.muscache.com/im/pictures/279cc61b-360d-42dc-837d-3b379417fec4.jpg?aki_policy=profile_medium" data-property_type_name="House" data-person_capacity_string="2" data-bedrooms_string="1" tabindex="0" role="button" style="display:block;width:32px;height:32px;">
+						<input type="checkbox" id="wishlist-widget-15127943" name="wishlist-widget-15127943" aria-hidden="true" tabindex="-1">
+							<label for="wishlist-widget-15127943" class="hide-sm" aria-hidden="true" tabindex="-1">
+								<i name="heart" size="2" color="true-rausch" class="fa fa-heart-o icon-true-rausch icon-size-2 rich-toggle-checked"></i>
+								<i name="heart" size="2" class="fa fa-heart-o icon-size-2 wishlist-heart-unchecked rich-toggle-unchecked"></i>
+
+							</label>
+							<div class="tooltip tooltip-right-middle bg-dark-gray wishlist-widget-tooltip" role="tooltip" data-trigger="#wishlist-widget-icon-15127943" data-event="none">
+								<p class="text-white wishlist-widget-tooltip__body"></p>
+							</div>
+						</span>
+									</div>
+									<div id="carousel-3" class="carousel slide space-top-0">
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a1.muscache.com/im/pictures/812bd256-8b01-4b0f-8f6e-ce4a50098f3b.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/70065418-c00f-4950-a477-77661285787a.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slideshow-controls">
+											<button href="#carousel-3" data-slide="prev" class="target-prev target-control block-link" aria-label="Previous">
+												<i class="fa fa-chevron-left icon-size-2 icon-white"></i>
+											</button>
+											<button href="#carousel-3" data-slide="next" class="target-next target-control block-link" aria-label="Next">
+												<i class="fa fa-chevron-right icon-size-2 icon-white"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="infoContainer_tfq3vd">
+									<a href="/rooms/15127943?checkin=12%2F17%2F2016&amp;checkout=12%2F21%2F2016&amp;guests=1&amp;adults=1&amp;children=0&amp;infants=0" target="_blank" rel="noopener" data-check-info-section="true" class="linkContainer_6is5x8">
+										<div class="priceRatingContainer_inline_10f0ge3">
+											<div class="priceContainer_inline_10f0ge3">
+									<span class="priceContainer_1rxvror">
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span data-symbolbefore="true">Rp</span>
+											<span data-pricerate="true">1124107</span>
+										</span>
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span></span>
+										</span>
+									</span>
+											</div>
+										</div>
+										<div class="detailsContainer_inline_phj6hl">
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span>Private room in Annapolis</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>1 bed</span>
+									</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>2 guests</span>
+									</span>
+								</span>
+										</div>
+										<div class="statusContainer_a48hyl">
+								<span>
+									<div class="ratingContainer_inline_cm9r68">
+										<select id="review-3">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<span aria-label="5 reviews">
+											<span class="text_1chds16-o_O-size_micro_14ukpr-o_O-inline_10f0ge3">
+												<span class="va-middle">5 reviews</span>
+											</span>
+										</span>
+									</div>
+								</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="listing-card-wrapper col-sm-12 col-md-6 space-4">
+						<div class="listingCardWrapper_1804ev2">
+							<div id="listing-15127943" class="listingContainer_1hytgd0">
+								<div aria-hidden="true">
+									<div class="wishlistHeartContainer_g4b3dd">
+					<span class="rich-toggle wish_list_button wishlist-button" data-img="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" data-name="The Cape House Room Plus" data-address="Annapolis" data-hosting_id="15127943" data-review_count="5" data-room_type="Private room" data-star_rating="5" data-host_id="95898088" data-host_img="https://a1.muscache.com/im/pictures/279cc61b-360d-42dc-837d-3b379417fec4.jpg?aki_policy=profile_medium" data-property_type_name="House" data-person_capacity_string="2" data-bedrooms_string="1" tabindex="0" role="button" style="display:block;width:32px;height:32px;">
+						<input type="checkbox" id="wishlist-widget-15127943" name="wishlist-widget-15127943" aria-hidden="true" tabindex="-1">
+							<label for="wishlist-widget-15127943" class="hide-sm" aria-hidden="true" tabindex="-1">
+								<i name="heart" size="2" color="true-rausch" class="fa fa-heart-o icon-true-rausch icon-size-2 rich-toggle-checked"></i>
+								<i name="heart" size="2" class="fa fa-heart-o icon-size-2 wishlist-heart-unchecked rich-toggle-unchecked"></i>
+
+							</label>
+							<div class="tooltip tooltip-right-middle bg-dark-gray wishlist-widget-tooltip" role="tooltip" data-trigger="#wishlist-widget-icon-15127943" data-event="none">
+								<p class="text-white wishlist-widget-tooltip__body"></p>
+							</div>
+						</span>
+									</div>
+									<div id="carousel-4" class="carousel slide space-top-0">
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a1.muscache.com/im/pictures/812bd256-8b01-4b0f-8f6e-ce4a50098f3b.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/585b9ddd-223b-46f9-aeee-416672539360.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#" target="_blank" aria-hidden="true">
+													<div>
+														<img src="https://a2.muscache.com/im/pictures/70065418-c00f-4950-a477-77661285787a.jpg?aki_policy=x_medium" itemprop="image" class="img-responsive-height" alt="The Cape House Room Plus - Annapolis - House">
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slideshow-controls">
+											<button href="#carousel-4" data-slide="prev" class="target-prev target-control block-link" aria-label="Previous">
+												<i class="fa fa-chevron-left icon-size-2 icon-white"></i>
+											</button>
+											<button href="#carousel-4" data-slide="next" class="target-next target-control block-link" aria-label="Next">
+												<i class="fa fa-chevron-right icon-size-2 icon-white"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="infoContainer_tfq3vd">
+									<a href="/rooms/15127943?checkin=12%2F17%2F2016&amp;checkout=12%2F21%2F2016&amp;guests=1&amp;adults=1&amp;children=0&amp;infants=0" target="_blank" rel="noopener" data-check-info-section="true" class="linkContainer_6is5x8">
+										<div class="priceRatingContainer_inline_10f0ge3">
+											<div class="priceContainer_inline_10f0ge3">
+									<span class="priceContainer_1rxvror">
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span data-symbolbefore="true">Rp</span>
+											<span data-pricerate="true">1124107</span>
+										</span>
+										<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_bold_1lymmfr-o_O-inline_10f0ge3">
+											<span></span>
+										</span>
+									</span>
+											</div>
+										</div>
+										<div class="detailsContainer_inline_phj6hl">
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span>Private room in Annapolis</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>1 bed</span>
+									</span>
+								</span>
+								<span class="text_1chds16-o_O-size_small_1vrq4z6-o_O-weight_light_1jo1qff-o_O-inline_10f0ge3">
+									<span aria-hidden="true"> · </span>
+									<span class="detailWithoutWrap_basc2l">
+										<span>2 guests</span>
+									</span>
+								</span>
+										</div>
+										<div class="statusContainer_a48hyl">
+								<span>
+									<div class="ratingContainer_inline_cm9r68">
+										<select id="review-4">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<span aria-label="5 reviews">
+											<span class="text_1chds16-o_O-size_micro_14ukpr-o_O-inline_10f0ge3">
+												<span class="va-middle">5 reviews</span>
+											</span>
+										</span>
+									</div>
+								</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="results-footer col-lg-12">
+					<div class="pagination-buttons-container space-8">
+						<div class="results_count">
+			<span>
+				<span>1</span>
+				<span></span>
+				<span>–</span>
+				<span></span>
+				<span>18</span>
+				<span> of </span>
+				<span>
+					<span>126 Rentals</span>
+				</span>
+			</span>
+						</div>
+						<div class="">
+							<ul class="pagination">
+								<li class="active">
+									<a href="/s/Gambrills--MD?page=1" data-prevent-default="true">1</a>
+								</li>
+								<li class="">
+									<a href="/s/Gambrills--MD?page=2" rel="next" data-prevent-default="true">2</a>
+								</li>
+								<li class="">
+									<a href="/s/Gambrills--MD?page=3" rel="next" data-prevent-default="true">3</a>
+								</li>
+								<li class="gap">
+									<span class="gap">…</span>
+								</li>
+								<li class="">
+									<a href="/s/Gambrills--MD?page=7" rel="next" data-prevent-default="true">7</a>
+								</li>
+								<li class="next next_page">
+									<a href="/s/Gambrills--MD?page=2" rel="next" data-prevent-default="true">
+						<span class="screen-reader-only">
+							<span>Next</span>
+						</span>
+										<i class="fa fa-chevron-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nearby-links">
+						<div class="">
+							<div class="breadcrumbs space-top-1" itemprop="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<span class="breadcrumb" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a href="#" itemprop="item">
+						<span itemprop="name">United States</span>
+					</a>
+				</span>
+				<span class="breadcrumb" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a href="#" itemprop="item">
+						<span itemprop="name">Maryland</span>
+					</a>
+				</span>
+				<span class="breadcrumb" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a href="#" itemprop="item">
+						<span itemprop="name">Gambrills</span>
+					</a>
+				</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 	    	</div>
 
-	    	<div class="col-md-5" style="padding: 0px">
+	    	<div class="col-md-5 map" style="padding: 0px">
 	    		
 	    		<img src="img/map.jpg">
 
@@ -265,6 +812,25 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/jquery.slicknav.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.js"></script>
+		<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-formatcurrency/jquery.formatCurrency-1.4.0.min.js"></script>
+		<script src="js/jquery.formatCurrency.all.js"></script>
+		<script src="js/jquery.barrating.min.js"></script>
+		<script>
+			$(function () {
+				$('#datetimepicker6').datetimepicker();
+				$('#datetimepicker7').datetimepicker({
+					useCurrent: false //Important! See issue #1075
+				});
+				$("#datetimepicker6").on("dp.change", function (e) {
+					$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+				});
+				$("#datetimepicker7").on("dp.change", function (e) {
+					$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+				});
+			});
+		</script>
 	</body>
 </html>
 
