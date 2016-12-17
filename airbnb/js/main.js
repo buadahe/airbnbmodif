@@ -237,3 +237,49 @@ $( document ).ready(function() {
 				});
 });
 
+$( document ).ready(function() {
+	$("#price-range-low").formatCurrency({ colorize:true, region: 'id-ID' });
+	$("#price-range-high").formatCurrency({ colorize:true, region: 'id-ID' });
+	$(".sidebar").scroll(function () {
+		var scroll = $(this).scrollTop();
+		if(scroll > 350){
+			$("#filtersign").addClass("stuck");
+		}else{
+			$("#filtersign").removeClass("stuck");
+		}
+	});
+});
+
+$(function() {
+	$('#review-1').barrating({
+		theme: 'bootstrap-stars'
+	});
+	$('#review-2').barrating({
+		theme: 'bootstrap-stars'
+	});
+	$('#review-3').barrating({
+		theme: 'bootstrap-stars'
+	});
+	$('#review-4').barrating({
+		theme: 'bootstrap-stars'
+	});
+});
+
+function filters(){
+	$('.sidebar').addClass('filters-open');
+	$('.filters').removeClass('collapse');
+}
+
+function filtersoff(){
+	$('.sidebar').removeClass('filters-open');
+	$('.filters').addClass('collapse');
+}
+
+$("#ex2").slider({});
+$("#ex2").on("slide", function(slideEvt) {
+	var val = new String(slideEvt.value);
+	var low = val.split(",");
+	$("#price-range-low").text(low[0]).formatCurrency({ colorize:true, region: 'id-ID' });
+	$("#price-range-high").text(low[1]).formatCurrency({ colorize:true, region: 'id-ID' });
+});
+
