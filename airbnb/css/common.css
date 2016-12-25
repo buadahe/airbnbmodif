@@ -689,5 +689,14 @@ sub, sup {
     line-height: 22px !important;
     letter-spacing: 0.2px !important;
 }
+
+.story.office_barcelona-spain {
+    background: url(../img/barcelona.jpg) 50% 0 no-repeat;
+}
+
+.text-normal
+{
+	text-align: justify;
+}
 >>>>>>> origin/master
 
