@@ -631,8 +631,8 @@ a {
 }
 
 .btn-primary:hover, .btn-primary:focus {
-    border-color: #ff7e82;
-    background-color: #ff7e82;
+    border-color: #71b7bf;
+    background-color: #71b7bf;
     color: #fff;
 }
 
@@ -1769,8 +1769,8 @@ p {
     box-sizing: border-box;
 }
 .btn-primary {
-    border-color: #ff5a5f;
-    background-color: #ff5a5f;
+    border-color: #71b7bf;
+    background-color: #71b7bf;
     color: #fff;
 }
 .filters-footer {
